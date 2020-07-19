@@ -1,0 +1,24 @@
+{
+  "name": "bpmoffice",
+  "version": "1.0.0",
+  "description": "Teste front-end - BPM Office",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcaina/bpmoffice.git"
+  },
+  "author": "David Cainã Araujo Vieira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidcaina/bpmoffice/issues"
+  },
+  "homepage": "https://github.com/davidcaina/bpmoffice#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
+  }
+}

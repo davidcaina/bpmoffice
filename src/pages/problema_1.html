@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>BPM Office - Teste</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-2"> <a class="nav-link navbar-brand mr-0 text-white" href="problema_1.html">Problema 1</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="index.html">BPM Office - Teste</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="problema_2.html">Problema 2</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="py-5 text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../images/background_index_imagem.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+        <div class="container">
+          <div class="row">
+            <div class="mx-auto col-lg-6 col-10">
+              <h1>Formulário de Cadastro</h1>
+              <p class="mb-3">&nbsp;</p>
+              <form class="text-left">
+                <div class="form-group"> <label for="form_name">Nome Completo</label> <input type="text" class="form-control" id="form_name" placeholder="Nome*"> </div>
+                
+                <div class="form-row">
+                  <div class="form-group col-md-6"> <label for="form_cpf">CPF</label> <input type="text" class="form-control"  id="form_cpf" placeholder="CPF*" onkeypress="$(this).mask('000.000.000-00')"> </div>
+                  <div class="form-group col-md-6"> <label for="form_data_nascimento">Data de Nascimento</label> <input type="text" class="form-control" id="form_data_nascimento" placeholder="Data de Nascimento*" onkeypress="$(this).mask('00/00/0000')"> </div>
+                  <div class="form-group col-md-6"> <label for="form_telefone">Telefone</label> <input type="text" class="form-control" id="form_telefone" placeholder="Telefone*" onkeypress="$(this).mask('(00) 0000-00009')"> </div>
+                  <div class="form-group col-md-6"> <label for="form_email">Email</label> <input type="email" class="form-control" id="form_email" placeholder="Email*"> </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6"> <label for="form_cep">CEP</label> <input type="text" class="form-control" id="form_cep" placeholder="CEP*" onkeypress="$(this).mask('000.00-000')"> </div>
+                  </div> 
+                  <div class="form-row">
+                    <div class="form-group col-md-6"> <label for="form_logradouro">Logradouro</label> <input type="text" class="form-control" id="form_logradouro" placeholder="Logradouro"> </div>
+                    <div class="form-group col-md-6"> <label for="form_bairro">Bairro</label> <input type="text" class="form-control" id="form_bairro" placeholder="Bairro"> </div>
+                    <div class="form-group col-md-6"> <label for="form_numero">Número</label> <input type="number" class="form-control" id="form_numero" placeholder="Número"> </div>
+                    <div class="form-group col-md-6"> <label for="form_complemento">Complemento</label> <input type="text" class="form-control" id="form_complemento" placeholder="Complemento"> </div>
+                    <div class="form-group col-md-6"> <label for="form_cidade">Cidade</label> <input type="text" class="form-control" id="form_cidade" placeholder="Cidade"> </div>
+                    <div class="form-group col-md-6"> <label for="form_uf">UF</label> <input type="text" class="form-control" id="form_uf" placeholder="UF"> </div>
+                  </div>
+                  <div class="form-group"> <label for="form_bio">Descrição (Bio)</label> <textarea class="form-control h-25" id="form_bio" rows="3" placeholder="Descrição (Bio)" ></textarea>
+              </form>
+              <button type="button" class="btn btn-primary w-25 mx-5" style="margin: 40px;" id="btn_enviar" >Enviar</button>
+              <button type="button" class="btn btn-primary w-25 mx-5" style="margin: 40px;" id="btn_limpar">Limpar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../javascript/problema_1.js"></script>
+  </body>
+</html>
