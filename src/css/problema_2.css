@@ -1,0 +1,23 @@
+
+
+.custom-blur-active{
+    filter: blur(5px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#main_div_repo{
+    width: 100%;
+    display: flex;
+    transition: 0.5s;
+}
+
+#nav_popupheader{
+    top: 20%;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background-color: #fff;
+    transition: 0.8s;
+}

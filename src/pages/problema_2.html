@@ -7,12 +7,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/problema_2.css">
 
     <title>BPM Office - Teste</title>
   </head>
   <body>
-    <nav id = "blur_1" class="navbar navbar-expand-md navbar-dark bg-dark" >
+    <nav id = "nav_index" class="navbar navbar-expand-md navbar-dark bg-dark" >
         <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,68 +26,146 @@
         </div>
       </nav>
 
-      <div id = "blur_2" class="py-5 text-white" id="main_div_repo" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../images/background_index_imagem.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <!-- Popup das infos: -->
+    <div id = "nav_popupheader" class="py-5 text-dark"  style="display:none">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" style="">
+            <div class="card text-center">
+              <div id="" class="card-header">
+
+                <!-- Ambas as Tab: -->
+                <ul id="nav_popuptabs" class="nav nav-tabs card-header-tabs" style="display:none">
+                  <li id="tab_contribuidor" class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" data-target="#tabone">Contribuidores<br></a>
+                  </li>
+                  <li id="tab_issues" class="nav-item">
+                    <a class="nav-link" href="" data-toggle="tab" data-target="#tabtwo">Issues</a>
+                  </li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </ul>
+              </div>
+
+              <!-- Contribuidores Tab: -->
+              <div id="div_contribuidores" class="card-body h-50" style="display:none">
+                <div class="tab-content mt-2">
+                  <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="table-responsive">
+                          <h4 class="">Mais de 500 <span class="badge badge-pill badge-warning">*</span></h4>
+                          <table class="table table-bordered ">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th>Nome</th>
+                                <th>Numero de Contribuições</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>1</th>
+                                <td>Mark</td>
+                              </tr>
+                              <tr>
+                                <th>2</th>
+                                <td>Jacob</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="table-responsive">
+                          <h4 class="">Mais de 200 <span class="badge badge-pill badge-warning">*</span></h4>
+                          <table class="table table-bordered ">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th>Nome</th>
+                                <th>Numero de Contribuições</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>1</th>
+                                <td>Mark</td>
+                              </tr>
+                              <tr>
+                                <th>2</th>
+                                <td>Jacob</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="table-responsive">
+                          <h4 class="">Mais de 100 <span class="badge badge-pill badge-warning">*</span></h4>
+                          <table class="table table-bordered ">
+                            <thead class="thead-dark">
+                              <tr>
+                                <th>Nome</th>
+                                <th>Numero de Contribuições</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th>1</th>
+                                <td>Mark</td>
+                              </tr>
+                              <tr>
+                                <th>2</th>
+                                <td>Jacob</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Issues Tab: -->
+              <div id="div_issues" class="card-body h-50 text-dark" style="display:none">
+                <div class="tab-content mt-2">
+                  <div class="tab-pane fade show active" id="tabone" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown button </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
+                            <a class="dropdown-item" href="#">Open</a>
+                            <a class="dropdown-item" href="#">Closed</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- Main Div: -->
+      <div id="main_div_repo" class="py-5 text-white"  style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../images/background_index_imagem.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
         <div class="container" id="problema2_container">
           <div class="row" id="problema2_row">
             <div class="col-md-12 text-center">
               <h1 class="text-light mb-4">Repositórios do Github</h1>
             </div>
           </div>
-          <div id="darkRow" class="row text-dark">
-
-            <div class="col-lg-2 col-md-6 p-4">
-              <div class="card text-center">
-                <div class="card-body p-4">
-                  <img class="img-fluid d-block rounded-circle" src="../images/default_image.png">
-                  <p class="my-3 lead">Owner</p> <a class="btn btn-link" href="#">Info</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-2 col-md-6 p-4">
-              <div class="card text-center">
-                <div class="card-body p-4">
-                  <img class="img-fluid d-block rounded-circle" src="../images/default_image.png">
-                  <p class="my-3 lead">Owner</p> <a class="btn btn-link" href="#">Info</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 p-4">
-              <div class="card text-center">
-                <div class="card-body p-4">
-                  <img class="img-fluid d-block rounded-circle" src="../images/default_image.png">
-                  <p class="my-3 lead">Owner</p> <a class="btn btn-link" href="#">Info</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 p-4">
-              <div class="card text-center">
-                <div class="card-body p-4">
-                  <img class="img-fluid d-block rounded-circle" src="../images/default_image.png">
-                  <p class="my-3 lead">Owner</p> <a class="btn btn-link" href="#">Info</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 p-4">
-              <div class="card text-center">
-                <div class="card-body p-4">
-                  <img class="img-fluid d-block rounded-circle" src="../images/default_image.png">
-                  <p class="my-3 lead">Owner</p> <a class="btn btn-link" href="#">Info</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-2 col-md-6 p-4">
-              <div class="card text-center">
-                <div class="card-body p-4">
-                  <img class="img-fluid d-block rounded-circle" src="../images/default_image.png">
-                  <p class="my-3 lead">Owner</p> <a class="btn btn-link" href="#">Info</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          <!-- Div dos Repositorios: -->
+          <div id="darkRow" class="row text-dark"></div>
+           
+          <!-- Div da opção para adicionar repositorios: -->
           <div class="row">
-            <div class="col-md-18" style="align-items: center;" id="generate_mor_repos"><a class="btn btn-link" href="#" >More</a></div>
+            <div class="col-md-18" style="align-items: center;" id="generate_mor_repos">
+              <a class="btn btn-link moreRepoAncor" href="#" >More</a>
+            </div>
           </div>
         </div>
       </div>
