@@ -14,4 +14,4 @@ npm install
 ```
 node servidor.js
 ```
-Ou simplismente abra os arqivos .html individualmente
+Ou simplismente abra os arquivos .html individualmente
