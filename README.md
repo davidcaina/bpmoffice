@@ -9,7 +9,7 @@
 ```
 npm install
 ```
-*E inicie o servidor através de:
+* E inicie o servidor através de:
 
 ```
 node servidor.js
