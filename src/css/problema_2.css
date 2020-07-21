@@ -14,7 +14,7 @@
 
 #nav_popupheader{
     top: 20%;
-    margin-left: 20px;
+    margin-left: 250px;
     position: absolute;
     z-index: 10;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
