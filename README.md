@@ -9,9 +9,12 @@
 ```
 npm install
 ```
-* E inicie o servidor através de:
+* Inicie o servidor através de:
 
 ```
 node servidor.js
 ```
-Ou simplismente abra os arquivos .html individualmente
+* E acesse:
+```
+http://localhost:3000/
+```
